@@ -1,0 +1,99 @@
+@import "partials/_variables.scss";
+@import "partials/_font.scss";
+@import "partials/_base.scss";
+
+/*------------------------------*/
+/*           HOMEPAGE           */
+/*------------------------------*/
+
+#index { padding-top: 4.5rem; }
+/* Header */
+.header {
+	margin-bottom: 3em;
+	h1 {
+		font-family: $nunito;
+		margin-bottom: 1em; 
+		font-size: 1.563em;
+		color: $tagline;
+	}
+
+	form { width: 28rem; }
+	.cari-input-group {
+		.form-control, .btn { border: none; font-size: 1rem;}
+		.input-group-btn:last-child  .btn {
+			background: white;   
+		    color: $green;
+		    font-weight: 700;
+		}
+	}
+}
+
+/*------------------------------*/
+/*            DETAIL            */
+/*------------------------------*/
+
+#group {
+	background: white;
+	padding-top: 4.2rem;
+	padding-bottom: 0;
+	.detail-konten { font-size: 1.5rem; color: $detailKonten; line-height: 1; }
+	.bootstrap-select { width: 10em !important; }
+	.mid-divider { margin: .5rem auto; }
+}
+
+.img-pengguna{
+	height: 9em;
+	width: 9em;
+	background: $white;
+}
+
+.deskripsi {
+	/*font-size: .9375rem;*/
+	margin-top : -10em;
+	.container-tab {
+		max-height: 10em;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	#note{
+		.ulasan-item {
+			margin-bottom: 2em;
+		}
+	}
+	#quiz {
+		@extend #quiz;
+		.ulasan-item {
+			margin-bottom: 0;
+		}
+		.btn-quiz { padding-right: 2rem; padding-left: 2rem; border-bottom-right-radius: .25rem; }
+	}
+}
+
+/*------------------------------*/
+/*             AUTH             */
+/*------------------------------*/
+#masuk {
+	padding-top: 4.5rem;
+	.tagline {
+		margin-bottom: 1.75rem;
+	}
+}
+#daftar {
+	padding-top: 3.25rem;	
+	padding-bottom: 2rem;
+	#daftarForm {
+		.tab-content {
+			padding: 0;
+		}
+	}
+	.daftar-text {
+		margin-top: 7rem;  
+		color: $font2;
+		p { margin: 1.5em auto !important }
+		li { 
+			font-family: $opensans; 
+			line-height: 2;
+			i { color: $primary; line-height: 1.8 }
+		}
+	}
+}
